@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}    
+
+                                                         /* HEADER */
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 60px 58px 42.72px;
+}
+
+.header__logo {
+    height: 51px;
+}
+
+.nav-header__center {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header__link {
+    font: 600 15px/18px Montserrat;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-header__link_active {
+    color: #E51937;
+    left: 16%;
+    position: relative;
+}
+
+.nav-header__link_active::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #E51937;
+    right: 1%;
+    top: 25px;
+}
+
+.nav-header__link_modelx {
+    position: relative;
+    left: 12%;
+}
+
+.nav-header__link_model3 {
+    position: relative;
+    left: 2.4%;
+}
+
+.nav-header__link_roadster {
+    position: relative;
+    right: 4.4%;
+}
+
+.nav-header__link_Energy {
+    position: relative;
+    right: 11%}
+
+.nav-header__right {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-header__link_shop {
+    position: relative;
+    right: 1%;
+}
+
+.header__burger {
+    display: inline-block;
+    vertical-align: middle;
+    height: 15px;
+}
+
+.burger-line {
+    width: 24px;
+    height: 2px;
+    background: #E51937;
+}
+
+.burger-second {
+    margin: 4.5px 0;
+} 
+
+.nav-header__link,
+.row-header__btn,
+.header__burger {
+    cursor: pointer;
+}
+
+.header__burger:hover {
+    background: lightgrey;
+}
+
+.nav-header__link:hover {
+    background: lightgrey;
+}
+
+
+
+                           /* HEADER-SECTION */
+
+.header__sec {
+    display: block;
+    text-align: center;
+    background: url('img/bg_tesla.png') 0 0/100% auto no-repeat;
+}
+
+.header-sec__title {
+    font: 600 90px/110px Montserrat;
+    margin-bottom: -10px;
+}
+
+.header-sec__subtitle {
+    font: 500 11.5px/18px Montserrat;
+    margin-bottom: 24px;
+}
+
+.header-sec__picture {
+    display: flex;
+    justify-content: center;
+}
+
+.header-sec__img {
+    position: relative;
+    right: 2.5%;
+}
+
+
+
+                               /* HEADER__ROWS */
+
+.header__rows {
+    height: 58px;
+    max-width: 798px;
+    display: flex;
+    justify-content: space-between;
+    margin: 27px auto 0;
+}
+
+.desc__content {
+    font: 600 35px/43px Montserrat;
+}
+
+.desc__unit {
+    font: 600 20px/24px Montserrat;
+}
+
+.desc__additionally {
+    font: normal 12px/15px Montserrat;
+    margin: 5px 0 0;
+    position: relative;
+    bottom: 7px;
+}
+
+.desc__content,
+.row-header__speed,
+.row-header__distance {
+    display: inline-block;
+}
+
+.speed__icon-block,
+.distance__icon-block,
+.test-drive__icon-block {
+    display: none;
+}
+
+.speed__icon {
+    margin: 0 2% 2px -4%;
+}
+
+.distance__icon {
+    margin: 0 -2px 0px 65px;
+}
+
+.header__row_second {
+    display: flex;
+    align-items: center;
+}
+
+.row-header__test-drive{
+    font: bold 13px/16px Montserrat;
+    margin-top: 4px;
+}
+
+.row-header__btn {
+    font: bold 13px/16px Montserrat;
+    text-align: center;
+    text-transform: uppercase;
+    color: #E51937;
+    width: 160px;
+    height: 40px;
+    border: 2px solid #E51937;
+    box-sizing: border-box;
+    background: transparent;
+    margin-left: 40px;
+}
+
+.header__arrow-down {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    border: 3px solid #E51937;
+    transform: rotate(135deg);
+    transform-origin: left top;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin: 35px 51% 0;
+}
+
+.row-header__btn:hover {
+    box-shadow: 0 0 10px 2px #E51937;
+}
+
+                                             /* MEDIA для первой секции */
+
+
+@media (max-width: 768px) {
+
+    .header__menu {
+        margin: 24px 34px 80.32px 14.32px;
+    }
+
+    .nav-header__link {
+        display: none;
+    }
+
+    .nav-header__right {
+        justify-content: flex-end;
+    }
+
+    .header__burger {
+        vertical-align: middle;
+        height: 22px;
+        margin-bottom: 3px;
+    }
+
+    .burger-line {
+        width: 35px;
+        height: 3px;
+        background: #E51937;
+    }
+
+    .burger-second {
+        margin: 6.5px 0;
+    }
+
+    .header__sec {
+        background: url('img/bg_tesla.png') -13px 97px/109% auto no-repeat;
+    }
+
+    .header-sec__subtitle {
+        font-size: 15px;
+        margin-bottom: 86px;
+    }
+
+    .header-sec__picture {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-sec__img { 
+        left: 0% 
+    }
+
+    .header__rows {
+        max-width: 487.27px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 33px auto 63px;
+        position: relative;
+        left: 6px;
+    }
+
+    .header__row_first {
+        width: 100%;
+        height: 83px;
+        display: block;
+        margin-bottom: 60px;
+    }
+
+    .speed__icon,
+    .distance__icon,
+    .test-drive__icon {
+        display: none;
+    }
+
+    .speed__icon-block {
+        display: inline-block;
+        height: 83px;
+        width: 75px;
+        background: url("img/icon_speed_ipad.png") 0 0 no-repeat;
+        position: relative;
+        left: -10px;
+    }
+
+    .distance__icon-block {
+        display: inline-block;
+        width: 55px;
+        height: 83px;
+        background: url("img/icon_distance_ipad.png") 0 0 no-repeat;
+        position: relative;
+        left: -5px;
+        top: 6px;
+    }
+
+    .row-header__distance {
+        float: right;
+        margin-right: 16px;
+    }
+
+    .desc__content {
+        font: 600 50px/61px Montserrat;
+    }
+
+    .desc__unit {
+        font: 600 20px/24px Montserrat;
+        position: relative;
+        right: 2px;
+        bottom: 6px;
+    }
+
+    .desc__additionally {
+        font: normal 12px/15px Montserrat;
+        margin: 5px 0 0;
+        position: relative;
+        bottom: 7px;
+    }
+
+    .desc__content,
+    .row-header__speed,
+    .row-header__distance {
+        display: inline-block;
+    }
+
+    .header__row_second {
+        max-width: 418px;
+        height: 55px;
+        margin-right: 11px;
+        display: flex;
+        align-items: center;
+    }
+
+    .row-header__btn {
+        font: bold 16px/20px Montserrat;
+        width: 220px;
+        height: 55px;
+        color: #fff;
+        background: #E51937;
+        float: right;
+    }
+
+    .test-drive__icon-block {
+        display: inline-block;
+        width: 47px;
+        height: 55px;
+        background: url("img/icon_test-drive_ipad.png") 0 0 no-repeat;
+        position: relative;
+        left: -8px;
+    }
+    
+    .row-header__test-drive {
+        font: bold 16px/20px Montserrat;
+        color: #E51937;
+        margin: 0 2px -4px -1px;
+    }
+
+    .header__arrow-down {
+        position: relative;
+        left: 8px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .header__menu {
+        margin: 5px 21px 30px 2px;
+    }
+
+    .header__logotype,
+    .nav-header__link {
+        display: none;
+    }
+    
+    .header__logo {
+        height: 42px;
+        width: 100%;
+        background: url('img/logo_tesla_mobile.png') 0 0/auto 100% no-repeat;
+    }
+
+    .header__burger {
+        vertical-align: middle;
+        height: 15px;
+        position: relative;
+        top: 2px;
+    }
+
+    .burger-line {
+        width: 24px;
+        height: 3px;
+        background: #E51937;
+    }
+
+    .burger-second {
+        margin: 3px 0;
+    }
+
+    .header__sec {
+        background: url('img/bg_tesla.png') -17px 81px/113% auto no-repeat;
+    }
+
+    .header-sec__title {
+        font: 600 50px/61px Montserrat;
+        margin-bottom: -2px;
+    }
+    .header-sec__subtitle {
+        font: 500 10px/12px Montserrat;
+        margin-bottom: 49px;
+    }
+
+    .header-sec__picture {
+        display: flex;
+        justify-content: center;
+        height: 166px;
+    }
+
+    .header-sec__img {
+        height: 100%;
+    }
+
+    .header__rows {
+        max-width: 303px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 20px auto -13px;
+        position: relative;
+        left: 6px;
+    }
+
+    .header__row_first {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 5px 36px 0;
+    }
+
+    .speed__icon,
+    .distance__icon,
+    .test-drive__icon {
+        display: none;
+    }
+
+    .speed__icon-block {
+        display: inline-block;
+        height: 53px;
+        width: 49px;
+        background: url("img/icon_speed_mobile.png") 0 0 no-repeat;
+        position: relative;
+        left: -6px;
+    }
+
+    .distance__icon-block {
+        display: inline-block;
+        width: 33px;
+        height: 53px;
+        background: url("img/icon_distance_mobile.png") 0 -7px no-repeat;
+        position: relative;
+        left: -5px;
+        bottom: 5px;
+    }
+
+    .row-header__distance {
+        float: right;
+    }
+
+
+    .desc__content {
+        font: 600 27px/33px Montserrat;
+    }
+
+    .desc__unit {
+        font: 600 15px/18px Montserrat;
+        position: relative;
+        top: 0;
+        left: 1px;
+    }
+
+    .desc__additionally {
+        font: normal 10px/12px Montserrat;
+        margin: 5px 0 0;
+        position: relative;
+        bottom: 5px;
+    }
+
+    .desc__content,
+    .row-header__speed,
+    .row-header__distance {
+        display: inline-block;
+    }
+
+    .header__row_second {
+        max-width: 100%;
+        height: 42px;
+        margin: 0 6px 10px -6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .row-header__btn {
+        width: 160px;
+        height: 40px;
+        font: 600 13px/16px Montserrat;
+        color: #fff;
+        background: #E51937;
+        float: right;
+    }
+
+    .test-drive__icon-block {
+        display: inline-block;
+        width: 31px;
+        height: 40px;
+        background: url("img/icon_test-drive_mobile.png") 0 0 no-repeat;
+        position: relative;
+        left: -5px;
+    }
+    
+    .row-header__test-drive {
+        font: 600 13px/16px Montserrat;
+        color: #E51937;
+        margin: 0 -16px 0 -1px;
+    }
+
+    .header__arrow-down {
+        position: relative;
+        left: 14px;
+    }
+}
